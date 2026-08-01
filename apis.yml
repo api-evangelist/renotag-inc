@@ -1,7 +1,25 @@
 aid: renotag-inc
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/renotag-inc.png
 name: Renotag, Inc.
-description: Renotag, Inc. is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Renotag, Inc. is a Calgary, Canada based construction-technology startup (founded 2020,
+  backed by 500 Global) that builds home-renovation and construction cost-estimation software. Its
+  product produces localized renovation estimates and material takeoffs in minutes by combining user
+  inputs with regional labor and material pricing data, helping contractors quote and close more
+  business. As of this enrichment pass Renotag publishes no public developer program, API, OpenAPI
+  specification, SDK, or documentation surface; the primary web properties (renotag.com and
+  api.renotag.com) currently return HTTP 301 redirect loops, and the app is a private login at
+  app.renotag.com. This profile is retained as a portfolio lead surfaced from the 500 Global portfolio.
 url: https://raw.githubusercontent.com/api-evangelist/renotag-inc/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +29,28 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Construction
+- Cost Estimation
+- Home Renovation
+- Contractors
+- Construction Technology
+- Financial Software
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/renotag-inc-domain-security.yml
 - type: Website
   url: https://renotag.com
